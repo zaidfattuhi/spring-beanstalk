@@ -1,5 +1,7 @@
 package com.aws.codestar.projecttemplates.controller;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.json.JSONObject;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -8,22 +10,21 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 /**
- * Tests for {@link HelloWorldController}. Modify the tests in order to support your use case as you build your project.
+ * Tests for {@link HelloWorldController}. Modify the tests in order to support
+ * your use case as you build your project.
  */
 @DisplayName("Tests for HelloWorldController")
 public class HelloWorldControllerTest {
 
-    private static final String EXPECTED_RESPONSE_VALUE = "Hello AWS CodeStar!";
+    private static final String EXPECTED_RESPONSE_VALUE = "Hello AWS CodeStar! BEENSTALK";
     private static final String INPUT_NAME = "AWS CodeStar";
 
     private final HelloWorldController controller = new HelloWorldController();
 
     /**
-     * Initializing variables before we run the tests.
-     * Use @BeforeAll for initializing static variables at the start of the test class execution.
+     * Initializing variables before we run the tests. Use @BeforeAll for
+     * initializing static variables at the start of the test class execution.
      * Use @BeforeEach for initializing variables before each test is run.
      */
     @BeforeAll
@@ -32,8 +33,8 @@ public class HelloWorldControllerTest {
     }
 
     /**
-     * De-initializing variables after we run the tests.
-     * Use @AfterAll for de-initializing static variables at the end of the test class execution.
+     * De-initializing variables after we run the tests. Use @AfterAll for
+     * de-initializing static variables at the end of the test class execution.
      * Use @AfterEach for de-initializing variables at the end of each test.
      */
     @AfterAll
@@ -42,7 +43,8 @@ public class HelloWorldControllerTest {
     }
 
     /**
-     * Basic test to verify the result obtained when calling {@link HelloWorldController#helloWorldGet} successfully.
+     * Basic test to verify the result obtained when calling
+     * {@link HelloWorldController#helloWorldGet} successfully.
      */
     @Test
     @DisplayName("Basic test for GET request")
@@ -56,7 +58,8 @@ public class HelloWorldControllerTest {
     }
 
     /**
-     * Basic test to verify the result obtained when calling {@link HelloWorldController#helloWorldPost} successfully.
+     * Basic test to verify the result obtained when calling
+     * {@link HelloWorldController#helloWorldPost} successfully.
      */
     @Test
     @DisplayName("Basic test for POST request")
